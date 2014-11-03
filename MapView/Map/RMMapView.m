@@ -967,7 +967,7 @@
 
 - (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
 {
-    [self setCenterProjectedPoint:[_projection coordinateToProjectedPoint:centerCoordinate]];
+    [self setCenterCoordinate:centerCoordinate animated:NO];
 }
 
 - (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate animated:(BOOL)animated
@@ -993,7 +993,7 @@
 
 - (void)setCenterProjectedPoint:(RMProjectedPoint)centerProjectedPoint
 {
-    [self setCenterProjectedPoint:centerProjectedPoint animated:YES];
+    [self setCenterProjectedPoint:centerProjectedPoint animated:NO];
 }
 
 - (void)setCenterProjectedPoint:(RMProjectedPoint)centerProjectedPoint animated:(BOOL)animated
