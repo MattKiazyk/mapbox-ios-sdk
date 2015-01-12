@@ -177,6 +177,11 @@ typedef enum : NSUInteger {
 *   @param map The map view. */
 - (void)doubleTapOnAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map;
 
+/**
+*  @param annotation The annotation whose callout view was tapped.
+*  @param map        The map view containing the specified annotation. */
+- (void)tapOnCalloutViewForAnnotation:(RMAnnotation *)annotation onMap:(RMMapView *)map;
+
 /** Tells the delegate when the user long-presses the layer for an annotation. 
 *   @param annotation The annotation that was long-pressed. 
 *   @param map The map view. */
